@@ -33,7 +33,7 @@ export default class LoadExcelData extends LightningElement {
      * 
      * This method also handles opening a modal for displaying the data.
      * 
-     * @param {Event} event - The file upload event triggered when a file is selected.
+     * @param {Event} event - The file upload event triggered when a file is uploaded.
      */
 
     handleUploadedFile(event) {
