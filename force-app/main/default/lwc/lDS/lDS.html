@@ -1,0 +1,76 @@
+<template>
+
+    <!-- Basic Information-->
+    <h2 style="font-weight:bolder;">Lightning Data Service Demo</h2>
+    <lightning-record-edit-form style="background-color:wheat;" object-api-name={objectApiName} record-id={recordId}>
+        <table>
+            <tr><td></td></tr>
+            <tr>
+                <td colspan="2" style="font-weight:bolder;">Lightning-Record-Edit Form</td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Name</label>
+                    <lightning-input-field field-name="Name" variant="label-hidden">
+                    </lightning-input-field>
+                </td>
+                <td>
+                    <label>Phone</label>
+                    <lightning-input-field field-name="Phone" variant="label-hidden">
+                    </lightning-input-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Industry</label>
+                    <lightning-input-field field-name="Industry" variant="label-hidden">
+                    </lightning-input-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Number Of Employees</label>
+                    <lightning-input field-name="NumberOfEmployees" variant="label-hidden">
+                    </lightning-input>
+                </td>
+            </tr>
+            <tr><td></td></tr>
+        </table>
+
+    </lightning-record-edit-form>
+
+    <lightning-record-view-form style="background-color:wheat;" object-api-name={objectApiName} record-id={recordId}>
+        <table>
+            <tr><td></td></tr>
+            <tr>
+                <td colspan="2" style="font-weight:bolder;">Lightning-Record-View Form</td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Name</label>
+                    <lightning-output-field field-name="Name" variant="label-hidden">
+                    </lightning-output-field>
+                </td>
+                <td>
+                    <label>Phone</label>
+                    <lightning-output-field field-name="Phone" variant="label-hidden">
+                    </lightning-output-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Industry</label>
+                    <lightning-output-field field-name="Industry" variant="label-hidden">
+                    </lightning-output-field>
+                </td>
+            </tr>
+        </table>
+    </lightning-record-view-form>
+
+
+    <h2 style="font-weight:bolder;">Lightning-Record-Form</h2>
+    <lightning-record-form style="background-color:wheat;" object-api-name={objectApiName}
+            fields={fields}  mode="edit" onsubmit={submit} onsuccess={success}  record-id={recordId}>
+    </lightning-record-form>
+
+</template>
